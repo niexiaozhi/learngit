@@ -1,0 +1,49 @@
+<!--pages/order/order.wxml-->
+
+<view class='canteen common_view'>
+  <view>取餐时间</view>
+  <view class='color_red'>{{date}} {{dinnerTime.dTime}}</view>
+</view>
+<view class='canteen common_view'>
+  <view>食堂名称</view>
+  <view class='color_red'>{{canteen.cName}}</view>
+</view>
+
+<view class='order_details'>
+  <view class='details_title common_view'>订单详情</view>
+  <view class='details_content common_view' wx:for="{{foodJson}}">
+    <view class='img_view'>
+      <image src='{{item.url}}'></image>
+      <view class='dish_name'>{{item.text}}</view>
+    </view>
+    <view>
+      <text>X{{item.testNum}}</text>
+      <text class='price'>￥{{item.money}}</text>
+    </view>
+  </view>
+</view>
+
+<view>
+  <view class='coupon_view common_view'>
+    <view>我的优惠券</view>
+    <view class='color_gray'>没有可用优惠券</view>
+  </view>
+  <view class='discount common_view'>
+    <view class='color_gray'>小计</view>
+    <view class='color_red'>￥{{totalPrice}}</view>
+  </view>
+</view>
+
+<view class='remarks_view'>
+  <view class='remarks common_view'>
+    添加备注
+  </view>
+  <view class='remarks common_view'>
+    <input placeholder='请填写备注  (非必填)'></input>
+  </view>
+</view>
+
+<view class='bottom_view'>
+  <view class='total_price'>￥{{totalPrice}}</view>
+  <view class='settlement' bindtap='goOrderDetails'>去支付</view>
+</view>

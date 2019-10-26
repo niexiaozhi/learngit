@@ -1,0 +1,236 @@
+page {
+  font-family: microsoft yahei;
+}
+
+.header {
+}
+
+.titleImg {
+  width: 100%;
+  height: 80rpx;
+}
+
+.canteenMsg {
+  text-align: center;
+}
+
+.canteenName {
+  font-weight: 700;
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+}
+
+.dinnerTime text {
+  font-size: 25rpx;
+  border: 1px solid #fef4f5;
+  border-radius: 5px;
+  background-color: #fef4f5;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+
+.discount {
+  font-size: 18rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  color: #FA5213;
+}
+
+.discount text {
+  border: 1rpx solid #FA5213;
+  margin: 7rpx;
+  padding: 7rpx;
+  border-radius: 5px;
+}
+
+.active {
+  color: black;
+  background-color: white;
+}
+
+.search {
+  display: flex;
+  height: 46rpx;
+  border-radius: 20rpx;
+  margin-left: 30rpx;
+  background-color: white;
+  width: 70%;
+}
+
+.main {
+  display: flex;
+  border-top: 1px solid rgba(241, 241, 247, 0.651);
+  margin-bottom: 100rpx;
+}
+
+.left {
+  width: 25%;
+  color: gray;
+  background-color: rgba(241, 241, 247, 0.651);
+  font-size: 30rpx;
+}
+
+.left view {
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+}
+
+.right {
+  width: 75%;
+}
+
+.introduce {
+  color: rgba(219, 219, 221, 0.884);
+}
+
+.listItem2 {
+  display: flex;
+}
+
+.listItem .img {
+  width: 200rpx;
+  height: 200rpx;
+  text-align: center;
+  padding-top: 10rpx;
+}
+
+.listItem .img image {
+  width: 80%;
+  height: 80%;
+}
+
+.itemTitle {
+  font-size: 30rpx;
+  padding-left: 20rpx;
+  padding-top: 10rpx;
+  color: rgb(173, 173, 173);
+}
+
+.listItem .listText {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rpx;
+}
+
+.listItem .listText view {
+  display: flex;
+  align-items: flex-end;
+}
+
+.listItem .listText text {
+  font-size: 30rpx;
+  margin-top: 10rpx;
+}
+
+.listItem .listText .money {
+  color: #FA5213;
+}
+
+.listItem .listText view text {
+  font-size: 28rpx;
+  color: silver;
+  margin-right: 60rpx;
+}
+
+.listItem .listText view button {
+  background-color: red;
+  color: white;
+  padding-right: 8px;
+  padding-left: 8px;
+  padding-top: 0px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-track {
+  height: 20rpx;
+  color: black;
+}
+
+.bottom_view {
+  position: fixed;
+  bottom: 0;
+  background-color: #4a484d;
+  height: 100rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.settlement {
+  width: 30%;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  text-align: center;
+}
+
+.invalid{
+  pointer-events: none;
+  background-color: #5C5A5F;
+  color: #A7A6AB;
+}
+
+.display{
+  pointer-events: auto;
+  background-color: #FA5213;
+  color: white;
+}
+
+/*加号和减号*/
+.stepper text {
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 35rpx;
+  text-align: center;
+  float: left;
+  border: 1px solid #FA5213;
+  border-radius: 50%;
+  font-size: 40rpx;
+  margin-top: 5rpx;
+}
+
+.reduce {
+  color: #FA5213;
+}
+
+.plus {
+  color: white;
+  background-color: #FA5213;
+}
+
+/*数值*/
+.stepper input {
+  width: 50rpx;
+  height: 40rpx;
+  float: left;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 12px;
+}
+
+/*普通样式*/
+
+.stepper .normal {
+  visibility: visible;
+}
+
+/*禁用样式*/
+
+.stepper .disabled {
+  visibility: hidden;
+}
+
+.total_price {
+  color: white;
+  font-size: 50rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin-left: 30rpx;
+}

@@ -1,0 +1,92 @@
+/* pages/order-list/order-list.wxss */
+page{
+  background-color: #F7F7F7;
+  font-size: 28rpx; 
+}
+
+.common_view{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50rpx;
+  line-height: 50rpx;
+  /* border: 1px solid red; */
+}
+
+.order_view{
+  /* height: 200rpx; */
+  margin: 30rpx;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.order_content{
+  padding: 30rpx;
+}
+
+.order_status{
+  border: 1px solid #FBF7F8;
+  background-color: #FBF7F8;
+  color: #C02F37;
+  border-radius: 20px;
+  padding-left: 20rpx;
+  padding-right: 20rpx;  
+  height: 45rpx;
+  line-height: 45rpx;
+  font-size: 25rpx;
+}
+
+.dining_number{
+  font-size: 35rpx;
+  color: rgb(145, 97, 97);
+  font-weight: 600;
+}
+
+.order_info{
+  background-color: #FBF7F8;
+  border-radius: 10px;
+}
+
+.detailed{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20rpx;
+  color: #CECCCD;
+}
+
+.canteen_name{
+  padding-top: 20rpx;
+}
+
+.time_view{
+  padding-bottom: 20rpx;
+}
+
+.time{
+  color: rgb(145, 97, 97);
+}
+
+.price_view{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.price{
+  color: red;
+  font-size: 40rpx;
+  font-weight: 600;
+}
+
+.details_but{
+  border: 1px solid #C02F37;
+  color: #C02F37;
+  font-size: 25rpx;
+  border-radius: 20px;
+  background-color: #FBF7F8;
+  height: 50rpx;
+  line-height: 50rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;  
+}

@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/menu/menu",
+    "pages/order-list/order-list",
+    "pages/order-details/order-details",
+    "pages/order/order",
+    "pages/button2/button2",
+    "pages/button/button",
+    "pages/mine/mine",
+    "pages/logs/logs",
+    "pages/index/coordinate/coordinate"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "华智食堂在线点餐",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#FA5213",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "selectedIconPath": "pages/images/13-.png",
+        "iconPath": "pages/images/12.png"
+      },
+      {
+        "pagePath": "pages/order-list/order-list",
+        "text": "订单",
+        "selectedIconPath": "pages/images/15-.png",
+        "iconPath": "pages/images/14.png"
+      }
+    ]
+  },
+  "globalData":{
+    "canteen":null
+  }
+}

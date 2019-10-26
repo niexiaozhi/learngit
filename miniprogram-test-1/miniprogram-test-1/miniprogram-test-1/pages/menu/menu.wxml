@@ -1,0 +1,68 @@
+<view class='header'>
+  <image class='titleImg' src='../images/00.png'></image>
+
+  <view class='canteenMsg'>
+    <view class='canteenName'>{{canteen.cName}}</view>
+    <view class='dinnerTime'>
+      <text>{{date}} {{dinnerTime.dTime}}</text>
+    </view>
+    <view class='discount'>
+      <text>首单享8.5折</text>
+      <text>第二单享8折</text>
+      <text>第三单享9.5折</text>
+      <text>满100减10</text>
+    </view>
+  </view>
+
+</view>
+
+<view class='main'>
+  <view class='left'>
+    <scroll-view scroll-y="true" style="height: 1100rpx" scroll-into-view="true" scroll-with-animation="true">
+      <block wx:for="{{leftText}}" wx:for-list="item">
+        <view class="{{classfiySelect == item.id ? 'active' : ''}}" data-id='{{item.id}}' bindtap='left_list'>
+          <text>{{item.text1}}</text>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+
+  <view class='right'>
+    <scroll-view scroll-y="true" style="height: 1100rpx" bindscroll="scroll" scroll-top="{{scrollTop}}" scroll-into-view="{{'inToview'+rigId}}" scroll-with-animation="true">
+      <block wx:for="{{rightData}}" wx:for-index="fightIndex" wx:for-item="rightItem" wx:for-list="item">
+        <view class='itemTitle' id="{{'inToview'+rightItem.id}}">{{rightItem.title}}</view>
+        <view bindtap='particulars' class='listItem' data-id='{{rightItem.id}}'>
+
+          <block wx:for="{{rightItem.frist}}" wx:for-item="fristItem">
+            <view class='listItem2' data-text="{{}}">
+              <view class='img'>
+                <image src='{{fristItem.url}}'></image>
+              </view>
+              <view class='listText'>
+                <text>{{fristItem.text}}</text>
+                <text style='font-size: 20rpx;' class='introduce'>{{fristItem.introduce}}</text>
+                <text style='font-size: 20rpx;' class='introduce'>月售：{{fristItem.sum}}</text>
+                <text class='money'>¥{{fristItem.money}}</text>
+              </view>
+              <view class="stepper">
+                <!-- 减号 -->
+                <text class="{{fristItem.testNum > 0 ? normal : minusStatus}} reduce" data-rightindex="{{fightIndex}}" data-fristindex="{{index}}" bindtap="bindMinus">-</text>
+                <!-- 数值 -->
+                <input disabled='disabled' class="{{fristItem.testNum > 0 ? normal : minusStatus}}" type="number" value="{{fristItem.testNum}}" />
+                <!-- 加号 -->
+                <text class="plus" data-rightindex="{{fightIndex}}" data-fristindex="{{index}}" bindtap="bindPlus">+</text>
+              </view>
+            </view>
+          </block>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+
+</view>
+
+<view class='bottom_view'>
+  <view class='total_price'>￥{{price}}</view>
+  <view wx:if='{{price > 0}}' class='settlement display' bindtap='goOrder'>去结算</view>
+  <view wx:else class='settlement invalid' bindtap='goOrder'>去结算</view>
+</view>

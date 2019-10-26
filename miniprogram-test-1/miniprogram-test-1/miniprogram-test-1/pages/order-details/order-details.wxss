@@ -1,0 +1,104 @@
+/* pages/order-details/order-details.wxss */
+page{
+  background-color: #F7F7F7;
+  font-size: 28rpx; 
+}
+
+.color_gray{
+  color: gray;
+}
+
+.color_red{
+  color:#C02F37;
+}
+
+.order-view{
+  width: 90%;
+  background-color: white;
+  margin: 40rpx;
+  border-radius: 10px;
+  box-shadow: 20rpx 20rpx 10rpx #EDEDED;
+  /* height: 500rpx; */
+}
+
+.order-content{
+  padding: 25rpx 30rpx;
+}
+
+.basics{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+
+.dining-number{
+  color: red;
+  font-size: 40rpx;
+  font-weight: 600;
+}
+
+.food_view{
+  margin-top: 20rpx;
+  border-radius: 5px;
+  background-color: #FBF7F8;
+  /* height: 100rpx; */
+}
+
+.food{
+  width: 90%;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.partition_line{
+  width: 90%;
+  margin: 0 auto;
+  border-top: 1px solid rgb(224, 224, 224);
+}
+
+.remarks_title{
+  margin-top: 30rpx;
+  font-size: 30rpx;
+}
+
+.remarks_content{
+  margin-top: 20rpx;
+  width: 100%;
+  border-top: 2px solid rgb(224, 224, 224);
+  border-bottom: 1px solid rgb(224, 224, 224);
+  height: 5rpx;
+}
+
+.price_view{
+  margin-top: 40rpx;
+}
+
+.price{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 20rpx;
+}
+
+.total_price{
+  font-size: 40rpx;
+  color: rgb(145, 97, 97);
+  font-weight: 600;
+}
+
+.bottom_view{
+  position:fixed;
+  bottom:0;
+  background-color: white;
+  height: 90rpx;
+  line-height: 90rpx;
+  width: 100%;
+  text-align: center;
+  font-size: 35rpx;
+  border-top: 1px solid rgb(223, 221, 221);
+}

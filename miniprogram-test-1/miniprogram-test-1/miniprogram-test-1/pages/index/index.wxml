@@ -1,0 +1,57 @@
+<view>
+  <swiper autoplay="true" circular="true">
+    <swiper-item>
+      <image src='../images/06.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='../images/04.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='../images/05.jpg'></image>
+    </swiper-item>
+  </swiper>
+
+  <view class='mian-view'>
+    <view class='content-view tips'>
+      HI ~ 想吃什么呢？
+    </view>
+    <view class='content-view content' bindtap='goCoordinate'>
+      <view id="{{canteen.cId}}">{{canteen.cName}}</view>
+      <view class='icon'>
+        <image src='../images/09.png'></image>
+      </view>
+    </view>
+
+    <picker mode="date" value="{{date}}" start="{{date}}" bindchange="bindDateChange">
+      <view class='content-view content'>
+        <view class="picker">
+          {{date}}
+        </view>
+        <view class='icon'>
+          <image src='../images/09.png'></image>
+        </view>
+      </view>
+    </picker>
+
+    <view class='content-view content radio-view'>
+      <radio-group class="radio-group" bindchange="radioChange">
+        <label class="radio radio-list" wx:for="{{dinnerTime}}">
+          <radio color='#FA5213' value="{{index}}" checked="{{item.checked}}" />
+          <text>{{item.dName}}</text>
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='but-view'>
+      <button bindtap='goMenu'>选择菜品</button>
+    </view>
+
+    <view class='content-view explain'>
+      <view class='img'>
+        <image src='../images/11.png'></image>
+      </view>
+      <view>点餐说明</view>
+    </view>
+
+  </view>
+</view>

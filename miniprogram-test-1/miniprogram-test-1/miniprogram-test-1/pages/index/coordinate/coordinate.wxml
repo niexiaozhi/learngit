@@ -1,0 +1,7 @@
+<!--pages/index/coordinate/coordinate.wxml-->
+<view class='option' wx:for="{{canteen}}" data-index='{{index}}' bindtap='option'>
+  <view>{{item.cName}}</view>
+  <view class='option-icon'>
+    <image src='../../images/09.png'></image>
+  </view>
+</view>
